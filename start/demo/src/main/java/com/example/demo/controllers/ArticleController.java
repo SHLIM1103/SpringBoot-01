@@ -1,5 +1,7 @@
 package com.example.demo.controllers;
 
+import java.util.List;
+
 import com.example.demo.domains.ArticleDTO;
 import com.example.demo.domains.ReplyDTO;
 import com.example.demo.impls.ArticleServiceImpl;
@@ -28,7 +30,7 @@ public class ArticleController {
     public ArticleDTO getReadArticle(int artId){
         return articleService.readArticle(artId);
     }
-    public ReplyDTO[] getReadReply(int artId){
+    public List<ArticleDTO> getReadReply(int artId){
         return articleService.readReply(artId);
     }
 }

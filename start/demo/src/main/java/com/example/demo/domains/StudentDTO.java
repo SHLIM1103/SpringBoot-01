@@ -6,6 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter @Component
-public class StudentDTO {
+public class StudentDTO extends MemberDTO {
     protected String nickName;
 }

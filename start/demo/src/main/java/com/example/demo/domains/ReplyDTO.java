@@ -6,6 +6,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Getter @Setter @Component
-public class ReplyDTO {
+public class ReplyDTO extends ArticleDTO {
     protected int replyId;
 }

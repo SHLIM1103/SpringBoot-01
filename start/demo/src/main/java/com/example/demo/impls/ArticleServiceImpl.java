@@ -1,5 +1,7 @@
 package com.example.demo.impls;
 
+import java.util.List;
+
 import com.example.demo.domains.ArticleDTO;
 import com.example.demo.domains.ReplyDTO;
 import com.example.demo.services.ArticleService;
@@ -46,7 +48,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public ReplyDTO[] readReply(int artId) {
+    public List<ArticleDTO> readReply(int artId) {
         // TODO Auto-generated method stub
         return null;
     }

@@ -1,22 +1,22 @@
 package com.example.demo.services;
 
+import java.util.List;
+
 import com.example.demo.domains.MemberDTO;
-import com.example.demo.domains.StudentDTO;
-import com.example.demo.domains.TeacherDTO;
 
 import org.springframework.stereotype.Component;
 
 @Component
 public interface MemberService {
-    public void registerStudent(StudentDTO student);
-    public void registerTeacher(TeacherDTO teacher);
-    public void updateStudent(StudentDTO student);
+    public void registerStudent(MemberDTO student);
+    public void registerTeacher(MemberDTO teacher);
+    public void updateStudent(MemberDTO student);
     public void deleteMember(MemberDTO member);
-    public StudentDTO login(StudentDTO student);
-    public TeacherDTO access(TeacherDTO teacher);
-    public StudentDTO[] fetchStudentList();    
-    public StudentDTO fetchStudentDetail(int userId);
-    public int sum(StudentDTO student);
+    public MemberDTO login(MemberDTO student);
+    public MemberDTO access(MemberDTO teacher);
+    public List<MemberDTO> fetchStudentList();    
+    public MemberDTO fetchStudentDetail(int userId);
+    public int sum(MemberDTO student);
     public float avg(int sum);
     public boolean existId(int userId);
 }
