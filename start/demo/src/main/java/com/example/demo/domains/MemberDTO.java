@@ -7,6 +7,6 @@ import lombok.Setter;
 
 @Getter @Setter @Component
 public class MemberDTO {
-    protected int userId;
-    protected String userName, password;
+    protected int memId;
+    protected String memName, password;
 }

@@ -20,16 +20,17 @@
         <form action="">
             <table>
                 <tr>
+                    <!--memId, memName, password-->
                     <td>ID</td>
-                    <td><input type="text"></td>
+                    <td><input id="memId" type="text"></td>
                 </tr>
                 <tr>
                     <td>PW</td>
-                    <td><input type="text"></td>
+                    <td><input id="password" type="text"></td>
                 </tr>
                 <tr>
                     <td>Name</td>
-                    <td><input type="text"></td>
+                    <td><input id="memName" type="text"></td>
                 </tr>
                 <tr>
                     <td colspan="2">
@@ -46,17 +47,16 @@
                 .getElementById('join-btn')
                 .addEventListener('click', e => {
                     e.preventDefault()
-                    alert('회원가입 성공!')
+                    alert('클릭 성공!')
                     $.ajax({
-                        url: '/students/' + 1,
+                        url: '/students/' + document.getElementById('memId').value,
                         type: 'POST',
-                        data: JSON.stringify({userName: 'Hong', 
-                                              password: '1', 
-                                              nickName: '홍길동'}),
+                        data: JSON.stringify({memName: document.getElementById('memName').value ,
+                                              password: document.getElementById('password').value }),
                         dataType: 'json',
                         contentType: 'application/json',
                         success: d => {
-                            alert(`회원가입 성공!`)
+                            alert(`${d.memName} 님 회원가입 성공!`)
                         },
                         error: e => {
                             alert(`전송실패! ${e}`)

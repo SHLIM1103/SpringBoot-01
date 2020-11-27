@@ -48,7 +48,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    public List<ArticleDTO> readReply(int artId) {
+    public List<ReplyDTO> readReply(int artId) {
         // TODO Auto-generated method stub
         return null;
     }

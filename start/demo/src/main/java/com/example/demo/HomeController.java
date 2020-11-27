@@ -11,7 +11,7 @@ public class HomeController {
     @Autowired Proxy px;
     @GetMapping("/")
     public String index(){
-        px.print("프록시 테스트!");
+        px.print("프록시 테스트");
         return "index";
     }
 }
