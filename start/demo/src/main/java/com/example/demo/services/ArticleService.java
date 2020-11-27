@@ -3,6 +3,9 @@ package com.example.demo.services;
 import com.example.demo.domains.ArticleDTO;
 import com.example.demo.domains.ReplyDTO;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public interface ArticleService {
     public void writeArticle(ArticleDTO article);
     public void updateArticle(ArticleDTO article);

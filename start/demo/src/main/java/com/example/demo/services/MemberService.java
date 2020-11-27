@@ -4,6 +4,9 @@ import com.example.demo.domains.MemberDTO;
 import com.example.demo.domains.StudentDTO;
 import com.example.demo.domains.TeacherDTO;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public interface MemberService {
     public void registerStudent(StudentDTO student);
     public void registerTeacher(TeacherDTO teacher);

@@ -4,6 +4,9 @@ import com.example.demo.domains.ArticleDTO;
 import com.example.demo.domains.ReplyDTO;
 import com.example.demo.services.ArticleService;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class ArticleServiceImpl implements ArticleService {
 
     @Override

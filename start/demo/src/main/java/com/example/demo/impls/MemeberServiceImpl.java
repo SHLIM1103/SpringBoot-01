@@ -5,6 +5,9 @@ import com.example.demo.domains.StudentDTO;
 import com.example.demo.domains.TeacherDTO;
 import com.example.demo.services.MemberService;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class MemeberServiceImpl implements MemberService {
     private int count;
     private MemberDTO[] members;
@@ -62,7 +65,6 @@ public class MemeberServiceImpl implements MemberService {
 
     @Override
     public int sum(StudentDTO student) {
-        // TODO Auto-generated method stub
         return 0;
     }
 
@@ -74,12 +76,7 @@ public class MemeberServiceImpl implements MemberService {
 
     @Override
     public boolean existId(int userId) {
-        boolean flag = false;
-        for(int i = 0 ; i < count ; i++){
-            if
-                flag = true;
-            }
-        }
+        
         return false;
     }
 }
