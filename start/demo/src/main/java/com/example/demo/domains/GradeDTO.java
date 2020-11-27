@@ -1,12 +1,11 @@
 package com.example.demo.domains;
 
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter @Component
 public class GradeDTO extends MemberDTO{
-    private String korean, english, math;
-    public GradeDTO(){}
-    public GradeDTO(int userId, String korean, String english, String math){
-        super.userId = userId ;
-        this.korean = korean;
-        this.english = english;
-        this.math = math;
-    }
+    protected String korean, english, math;
 }

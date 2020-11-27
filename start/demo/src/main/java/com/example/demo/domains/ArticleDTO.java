@@ -1,11 +1,12 @@
 package com.example.demo.domains;
 
-public class ArticleDTO {
-    private int artId;
-    private String writerId;
-    private String title;
-    private String content;
-    private String writtenDate;
-    private String updatedDate;
-}
+import org.springframework.stereotype.Component;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter @Component
+public class ArticleDTO {
+    protected int artId;
+    protected String writerId, title, content, writtenDate, updatedDate;
+}

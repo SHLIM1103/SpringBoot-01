@@ -1,11 +1,11 @@
 package com.example.demo.domains;
 
+import org.springframework.stereotype.Component;
+
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter @Component
 public class StudentDTO extends MemberDTO{
-    private String nickName;
-	public StudentDTO(){}
-	public StudentDTO(int userId, String userName, String password, String nickName){
-		super.userId = userId;
-		super.userName = userName;
-		super.password = password;
-	}
+    protected String nickName;
 }
